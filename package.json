@@ -13,6 +13,7 @@
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "husky": "^0.15.0-rc.9",
+    "prettier": "^1.11.1",
     "pretty-quick": "^1.4.1"
   },
   "scripts": {
