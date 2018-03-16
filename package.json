@@ -1,6 +1,6 @@
 {
-  "name": "stats",
-  "version": "1.0.0",
+  "name": "classy-tachy",
+  "version": "0.0.1",
   "main": "index.js",
   "author": "Kevin Lazich",
   "license": "MIT",
@@ -11,9 +11,20 @@
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.6.1"
+    "babel-preset-env": "^1.6.1",
+    "husky": "^0.15.0-rc.9",
+    "pretty-quick": "^1.4.1"
   },
   "scripts": {
-    "build": "babel src -d lib --presets=env"
+    "build": "babel src -d lib --presets=env",
+    "precommit": "pretty-quick --staged",
+    "test": "yarn build && node index.js"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  },
+  "husky": {
+    "hooks": {}
   }
 }
