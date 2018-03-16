@@ -1,0 +1,19 @@
+{
+  "name": "stats",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Kevin Lazich",
+  "license": "MIT",
+  "dependencies": {
+    "babel-register": "^6.26.0",
+    "immutable": "^3.8.2",
+    "lodash": "^4.17.5"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
+  },
+  "scripts": {
+    "build": "babel src -d lib --presets=env"
+  }
+}
