@@ -1,17 +1,21 @@
 {
   "name": "classy-tachy",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "main": "index.js",
   "author": "Kevin Lazich",
   "license": "MIT",
   "dependencies": {
     "babel-register": "^6.26.0",
     "immutable": "^3.8.2",
-    "lodash": "^4.17.5"
+    "jsdom": "^11.6.2",
+    "lodash": "^4.17.5",
+    "tachyons": "^4.9.1"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.6.1",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-prettier": "^2.6.0",
     "husky": "^0.15.0-rc.9",
     "prettier": "^1.11.1",
     "pretty-quick": "^1.4.1"
@@ -19,7 +23,9 @@
   "scripts": {
     "build": "babel src -d lib --presets=env",
     "precommit": "pretty-quick --staged",
-    "test": "yarn build && node index.js"
+    "test": "yarn build && node index.js",
+    "prettier":
+      "prettier --single-quote --trailing-comma es5 --no-semi --write **/*.js"
   },
   "prettier": {
     "semi": false,
